@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vocabulary</title>
+    <style>
+      body {
+        /* background-image: linear-gradient(
+          to right bottom,
+          #b5179e,
+          #a31daa,
+          #8c26b5,
+          #6e2fc0,
+          #3f37c9
+        ); */
+        background-image: linear-gradient(
+          to right bottom,
+          #4361ee,
+          #5352e2,
+          #6041d5,
+          #6a2cc6,
+          #7209b7
+        );
+        width: 100vw;
+        height: 100vh;
+        font-family: Arial, Helvetica, sans-serif;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        /* align-items: center; */
+        flex-direction: column;
+        color: #ffffff70;
+      }
+      .container {
+        background-image: linear-gradient(
+          to right bottom,
+          #ffffff60,
+          #ffffff20
+        );
+        padding: 1rem;
+        width: 80%;
+        border-radius: 1rem;
+      }
+
+      li {
+        list-style-type: none;
+      }
+      .each-min-container {
+        /* width: 100%; */
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background-image: linear-gradient(
+          to right bottom,
+          #4361ee,
+          #5352e2,
+          #6041d5,
+          #6a2cc6,
+          #7209b7
+        );
+        border-radius: 1rem;
+        padding: 0.5rem;
+      }
+      .each-min-container li {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        display: inline-block;
+        /* border: solid 2px yellowgreen; */
+      }
+
+      a {
+        color: #ffffff90;
+        text-decoration: none;
+        cursor: pointer;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Vocabulary List</h1>
+    <ul class="container">
+      <li>{%WORD_ITEMS%}</li>
+    </ul>
+  </body>
+</html>

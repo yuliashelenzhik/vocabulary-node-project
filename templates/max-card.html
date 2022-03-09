@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>{%WORD%} - Learn German</title>
+    <style>
+      body {
+        background-image: linear-gradient(
+          to right bottom,
+          #4361ee,
+          #5352e2,
+          #6041d5,
+          #6a2cc6,
+          #7209b7
+        );
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        width: 100vw;
+        height: 100vh;
+        font-family: Arial, Helvetica, sans-serif;
+        color: #fff;
+      }
+      li {
+        list-style-type: none;
+      }
+      .container {
+        position: relative;
+        /* background-image: linear-gradient(to left top, #ffffff20, #ffffff60); */
+        background-image: linear-gradient(
+          to right bottom,
+          #ffffff99,
+          #ffffff70
+        );
+        width: 70vw;
+        height: 60vh;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        flex-direction: column;
+        border-radius: 1rem;
+      }
+      .german {
+        color: #4361ee;
+      }
+      .speach {
+        color: #5352e2;
+        font-style: italic;
+      }
+      .english {
+        color: #6041d5;
+      }
+      .example {
+        color: #6a2cc6;
+        font-style: italic;
+      }
+      .back-btn {
+        cursor: pointer;
+        position: absolute;
+        top: 0.5rem;
+        left: 0.5rem;
+        border: none;
+        padding: 1rem;
+        border-radius: 1rem;
+        background: #ffffff40;
+        color: #4361ee;
+        /* background: radial-gradient(#ffffff90, #ffffff00); */
+      }
+      a {
+        cursor: pointer;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <a href="/list"><button class="back-btn">Back to list</button></a>
+      <h1 class="german">{%WORD%}</h1>
+      <p class="speach">{%PARTOFSPEACH%}</p>
+      <h3 class="english">*{%TRANSLATION%}</h3>
+      <p class="example">{%EXAMPLE%}</p>
+    </div>
+  </body>
+</html>
